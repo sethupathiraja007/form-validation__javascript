@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="https://kit.fontawesome.com/f14f4fc449.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" id="form">
+            <h1>REGISTER</h1>
+            <div class="group">
+                <label for="Username">USERNAME</label>
+                <input type="text" id="username" name="Username" placeholder="username"><i class="fa-solid fa-user"  id="icon"></i>
+                <div class="error"></div>
+            </div>
+            <div class="group">
+                <label for="phonenumper">PHONENUMBER</label>
+                <input type="number" id="phonenumber" name="phonenumber" placeholder="phonenumber"> <i class="fa-solid fa-phone" id="icon1"></i>
+                <div class="error"></div>
+            </div>
+            <div class="group">
+                <label for="email">EMAIL</label>
+                <input type="text" id="email" name="email" placeholder="email"> <i class="fa-solid fa-envelope" id="icon2"></i>
+                <div class="error"></div>
+            </div>
+
+
+            <div class="group">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password" placeholder="password" ><i class="fa-solid fa-lock" id="icon3"></i>
+                <input type="checkbox" id="checkbox1" onclick="check1()">
+                <label for="checkbox1" id="pass"></i><i class="fa-solid fa-eye" id="pass1"></i><i class="fa-solid fa-eye-slash" id="pass2"></i></label>
+                <div class="error"></div>
+            </div>
+            <div class="group">
+                <label for="confirm password">CONFIRM PASSWORD</label>
+                <input type="password" id="confirm-password" name="Cpassword" placeholder="confirm-password"><i class="fa-solid fa-unlock" id="icon4"></i>
+                <input type="checkbox" id="checkbox2" onclick="check2()">
+                <label for="checkbox2" id="Cpass"><i class="fa-solid fa-eye" id="Cpass1"></i><i class="fa-solid fa-eye-slash" id="Cpass2"></i></label>
+                <div class="error"></div>
+            </div>
+            <button type="submit"> submit</button>
+        </form>
+    </div>
+    <script src="form.js"></script>
+
+</body>
+
+</html>
